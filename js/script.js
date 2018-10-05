@@ -148,13 +148,22 @@ function createMessageElement(messageObject) {
 function listChannels() {
     // #8 channel onload
     //$('#channels ul').append("<li>New Channel</li>")
+    
 
+    //using a for loop to append the channels to the channels list from the array
+    //instead of adding all five channels separately
+    for (i = 0; i < 6; i++) {
+        $('#channels ul').append(createChannelElement(channels_array[i]));
+        }
+    
+   
+ 
     // #8 five new channels
-    $('#channels ul').append(createChannelElement(yummy));
+    /*$('#channels ul').append(createChannelElement(yummy));
     $('#channels ul').append(createChannelElement(sevencontinents));
     $('#channels ul').append(createChannelElement(killerapp));
     $('#channels ul').append(createChannelElement(firstpersononmars));
-    $('#channels ul').append(createChannelElement(octoberfest));
+    $('#channels ul').append(createChannelElement(octoberfest));*/
 }
 
 /**

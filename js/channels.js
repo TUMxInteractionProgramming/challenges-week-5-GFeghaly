@@ -46,3 +46,6 @@ var octoberfest = {
     expiresIn: 60,
     messageCount: 321
 };
+
+var channels_array =[yummy,sevencontinents,killerapp,firstpersononmars,octoberfest];
+//console.log("channels_array",channels_array[0]);
